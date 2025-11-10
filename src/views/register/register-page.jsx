@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export function RegisterPage() {
+export async function RegisterPage() {
 	const [email, setEmail] = useState('')
 	const [username, setUsername] = useState('')
 	const [password, setPassword] = useState('')
@@ -14,12 +14,12 @@ export function RegisterPage() {
 			alert('As senhas não coincidem!')
 			return
 		}
+		
+
 
 		console.log('Email:', email)
 		console.log('Usuário:', username)
 		console.log('Senha:', password)
-
-		// Aqui você pode chamar sua API de cadastro
 	}
 
 	return (
@@ -129,7 +129,7 @@ export function RegisterPage() {
 							{/* Botão */}
 							<button
 								type='submit'
-								className='w-full mt-6 bg-[#9053A7] hover:bg-[#7F4793] text-white font-medium py-3 rounded-xl shadow-md transition'>
+								className='w-full cursor-pointer mt-6 bg-[#9053A7] hover:bg-[#7F4793] text-white font-medium py-3 rounded-xl shadow-md transition'>
 								Cadastrar
 							</button>
 						</form>

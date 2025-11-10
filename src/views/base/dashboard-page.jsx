@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export function DashboardPage() {
 	const [userName, setUserName] = useState('Usuário')
@@ -34,7 +35,7 @@ export function DashboardPage() {
 				{/* Grid dos Cards */}
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto'>
 					{/* Missões */}
-					<a href='/mission-page' className='no-underline'>
+					<Link to='/mission-page' className='no-underline'>
 						<div
 							className='bg-[#9A5CAD] text-white rounded-xl p-4 shadow-md flex flex-col justify-end aspect-square sm:aspect-4/3
 							transition hover:shadow-lg hover:-translate-y-0.5'>
@@ -45,7 +46,7 @@ export function DashboardPage() {
 								Missões
 							</h2>
 						</div>
-					</a>
+					</Link>
 
 					{/* Pontos */}
 					<div className='bg-[#B5CA8A] rounded-xl p-4 shadow-md flex flex-col justify-end aspect-square sm:aspect-4/3'>

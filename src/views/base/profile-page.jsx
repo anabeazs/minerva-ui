@@ -10,11 +10,11 @@ export function ProfilePage() {
 		progresso: 65, // porcentagem da barra de XP
 	})
 
-	useEffect(() => {
-		// Exemplo de carregamento de dados (mock ou localStorage)
-		const storedUser = localStorage.getItem('userProfile')
-		if (storedUser) setUserData(JSON.parse(storedUser))
-	}, [])
+	// useEffect(() => {
+	// 	// Exemplo de carregamento de dados (mock ou localStorage)
+	// 	const storedUser = localStorage.getItem('userProfile')
+	// 	if (storedUser) setUserData(JSON.parse(storedUser))
+	// }, [])
 
 	return (
 		<div className='bg-linear-to-b from-[#B5CA8A]/65 to-white w-full h-full flex flex-col items-center justify-center p-6 '>

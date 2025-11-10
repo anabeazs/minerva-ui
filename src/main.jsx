@@ -24,7 +24,7 @@ const webRoutes = createBrowserRouter([
 		element: <RegisterPage />,
 	},
 	{
-		path: '/layout',
+		path: '/',
 		element: <Layout />,
 		children: [
 			{
